@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAkun"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:contentPaddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TextView
+            android:id="@+id/tvStsAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Akun"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvUsernameAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:maxLines="1"
+            android:layout_marginStart="76dp"
+            android:text="Username"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvPasswordAKun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="82dp"
+            android:layout_marginTop="26dp"
+            android:maxLines="1"
+            android:layout_marginStart="76dp"
+            android:text="Password"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvStatusAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="6dp"
+            android:text="Pegawai"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        app:layout_constraintTop_toBottomOf="@+id/cardAkun"
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

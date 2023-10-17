@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageShowProfil"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/ic_account"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="#00FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck"/>
+
+                <TextView
+                    android:id="@+id/btnEditProfilMenu"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="12dp"
+                    android:clickable="true"
+                    android:text="Edit Profil"
+                    android:textColor="#086CE4"
+                    android:textSize="18sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxStrokeColor="#2196F3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/namaShowProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Pegawai"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxStrokeColor="#2196F3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nipShowProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="@color/black"
+                    android:hint="NIP Pegawai"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxStrokeColor="#2196F3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/jabatanShowProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jabatan Pegawai"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxStrokeColor="#2196F3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/unitkerjaShowProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Unit Kerja"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_gravity="start"
+                    android:layout_width="160dp"
+                    android:layout_height="58dp"
+                    app:boxStrokeColor="#2196F3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/golonganShowProfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Golongan"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:inputType="textShortMessage" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_gravity="end"
+                    android:layout_width="160dp"
+                    android:layout_height="58dp"
+                    app:boxStrokeColor="#2196F3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nohpShowProfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Telepon"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:inputType="textShortMessage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_gravity="start"
+                    android:layout_width="160dp"
+                    android:layout_height="58dp"
+                    app:boxStrokeColor="#2196F3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/masakerjaShowProfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masa Kerja"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:inputType="textShortMessage" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_gravity="end"
+                    android:layout_width="160dp"
+                    android:layout_height="58dp"
+                    app:boxStrokeColor="#2196F3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/levelShowProfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="User"
+                        android:inputType="textShortMessage" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

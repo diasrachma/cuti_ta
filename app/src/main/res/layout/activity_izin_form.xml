@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelFormIzin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/lock_50px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#5458FD"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvNamaIzin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="Nama Pegawai"
+                        android:inputType="textShortMessage"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/lock_50px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#5458FD"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvNipIzin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="Nomor Induk Pegawai"
+                        android:inputType="textShortMessage"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/lock_50px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#5458FD"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvJabatanIzin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="Jabatan"
+                        android:inputType="textShortMessage"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Jam Izin"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txJamIzin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:text="_____________"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnJamIzin"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="230dp"
+                    android:background="@drawable/clock"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Jam Kembali"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txJamKembali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:text="_____________"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnJamKembali"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="230dp"
+                    android:background="@drawable/clock"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Tanggal Izin"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txTglIzin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:text="_____________"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnTglIzin"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="230dp"
+                    android:background="@drawable/calendar"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txAlasanIzin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alasan Izin Keluar"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:gravity="top"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txAlamatIzin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat Selama Izin Keluar"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:gravity="top" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnCancelFormIzin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#F43737"
+        android:text="BATAL"
+        android:textColor="@color/white"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSimpanFormIzin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnSimpanFormIzin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3ADD3A"
+        android:text="SIMPAN"
+        android:textColor="@color/white"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelFormIzin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelFormIzin"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelFormIzin"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

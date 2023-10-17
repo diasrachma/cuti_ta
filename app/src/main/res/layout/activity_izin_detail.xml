@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="16dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:id="@+id/tvDetailStatusIzin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="8dp"
+                    android:text="Selesai"
+                    android:textStyle="bold|italic"/>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:id="@+id/tvDetailIdIzin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="8dp"
+                    android:text="00"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/detailNamaIzin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Pegawai"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/detailNipIzin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Induk Pegawai"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/detailJabatanIzin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jabatan"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/detailJamIzin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jam Keluar"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="end"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/detailKembaliIzin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jam Kembali"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/detailTanggalIzin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal Keluar Kantor"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/detailAlamatIzin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat Selama Izin"
+                    android:enabled="false"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/detailAlasanIzin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alasan Izin Keluar"
+                    android:enabled="false"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/detailTerlambat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Terlambat Kembali"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:textColor="#E41506"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnKembaliIzin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:text="KEMBALI"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

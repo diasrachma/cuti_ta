@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homePimpinan"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_profilPimpinan"
+        android:icon="@drawable/akun"
+        android:title="Profil"/>
+    <item
+        android:id="@+id/nav_userPimpinan"
+        android:icon="@drawable/user"
+        android:title="List Pegawai" />
+
+    <item
+        android:title="Cuti">
+        <menu>
+            <item
+                android:id="@+id/nav_formPimpinan"
+                android:icon="@drawable/task"
+                android:title="Form Cuti"/>
+
+            <item
+                android:id="@+id/nav_riwayatPimpinan"
+                android:icon="@drawable/history"
+                android:title="Riwayat Anda"/>
+
+            <item
+                android:id="@+id/nav_arsipPimpinan"
+                android:icon="@drawable/archive"
+                android:title="Arsip Cuti Pegawai"/>
+
+            <item
+                android:id="@+id/nav_kuotaPimpinan"
+                android:icon="@drawable/sisa"
+                android:title="Kuota Cuti Anda"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Izin Keluar">
+        <menu>
+            <item
+                android:id="@+id/nav_formIzinKeluarPimpinan"
+                android:icon="@drawable/form_izin"
+                android:title="Form Izin Keluar"/>
+
+            <item
+                android:id="@+id/nav_riwayatIzinKeluarPimpinan"
+                android:icon="@drawable/history"
+                android:title="Riwayat Izin Keluar Anda"/>
+
+            <item
+                android:id="@+id/nav_arsipIzinKeluarPimpinan"
+                android:icon="@drawable/archive"
+                android:title="Arsip Izin Keluar Pegawai"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_resetPimpinan"
+                android:icon="@drawable/privacy"
+                android:title="Privasi Akun"/>
+
+            <item
+                android:id="@+id/nav_logoutPimpinan"
+                android:icon="@drawable/logoutnih"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

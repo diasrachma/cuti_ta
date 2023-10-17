@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tx1"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="EDIT PROFIL PEGAWAI"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx1" />
+
+    <TextView
+        android:id="@+id/edtLevelProfil"
+        android:text="pegawai"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scv15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider10"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnSimpanEditUser"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:paddingHorizontal="24dp"
+                android:clickable="true"
+                android:text="Simpan"
+                android:textColor="#086CE4"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/edtImageUser"
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/akun"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="#00FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/edtImageUserUpdate"
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#00FFFFFF"
+                    android:visibility="gone"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/akun"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="#00FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnEditImageProfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:tint="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="@color/purple_500"
+                app:hintTextColor="@color/purple_500"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNamaUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Pegawai"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="@color/purple_500"
+                app:hintTextColor="@color/purple_500"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNipUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NIP Pegawai"
+                    android:enabled="false"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="@color/purple_500"
+                app:hintTextColor="@color/purple_500"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtJabatanUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jabatan Pegawai"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="@color/purple_500"
+                app:hintTextColor="@color/purple_500"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtGolonganUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Golongan Pegawai"
+                    android:inputType="textCapCharacters" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="@color/purple_500"
+                app:hintTextColor="@color/purple_500">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtUnitKerjaUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="Unit Kerja"
+                    android:enabled="false"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="56dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="@color/purple_500"
+                    app:hintTextColor="@color/purple_500"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtMasaKerjaUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Masa Kerja"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tahun"
+                    android:textSize="16sp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="24dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="@color/purple_500"
+                app:hintTextColor="@color/purple_500"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNoHpUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Nomor Handphone"
+                    android:inputType="number|phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:visibility="gone"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeColor="#515151">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtLokasiProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="Lokasi Terkini"
+                    android:inputType="textShortMessage" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="36dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

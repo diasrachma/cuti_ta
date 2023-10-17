@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTtd"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:contentPaddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:id="@+id/tvJabatanTtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:text="Jabatan"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvNamaTtd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="82dp"
+            android:maxLines="1"
+            android:layout_marginStart="96dp"
+            android:text="Nama"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvNipTtd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="82dp"
+            android:layout_marginTop="48dp"
+            android:maxLines="1"
+            android:layout_marginStart="96dp"
+            android:text="Password"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgTtd"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="#000000"
+            app:civ_border_width="1dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btnDeleteTtd"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="end"
+            android:padding="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/cancel"
+            app:civ_border_color="#EA1809"
+            app:civ_border_width="1dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        app:layout_constraintTop_toBottomOf="@+id/cardTtd"
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

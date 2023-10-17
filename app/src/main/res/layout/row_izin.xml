@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        app:cardElevation="3dp"
+        app:contentPaddingTop="4dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TextView
+            android:id="@+id/adpIdIzin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/adpTglIzin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="26dp"
+            android:text="2022/02/11"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:text="Izin Keluar"
+            android:lines="1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/adpJamIzin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:text="00:00:00"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/adpStatusIzin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Selesai"
+            android:textStyle="italic|bold"
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

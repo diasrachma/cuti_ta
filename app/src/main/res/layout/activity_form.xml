@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/judulFormCuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="FORM PENGAJUAN CUTI"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelFormCuti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judulFormCuti"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/lock_50px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:endIconMode="clear_text">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/tvNamaCuti"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingStart="16dp"
+                        android:textSize="16sp"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="Nama Pegawai"
+                        android:inputType="text"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/lock_50px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#5458FD"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvNipCuti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="Nomor Induk Pegawai"
+                        android:inputType="textShortMessage"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/lock_50px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#5458FD"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvJabatanCuti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="Jabatan"
+                        android:inputType="textShortMessage"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/lock_50px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#5458FD"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvGolonganCuti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="Golongan"
+                        android:inputType="textShortMessage"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:backgroundTint="#00FFFFFF">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/lock_50px"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="40dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeColor="#5458FD"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvNohpCuti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:hint="No. Hp"
+                        android:inputType="textShortMessage"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Jenis Cuti"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spJenisCuti"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="100dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/boxFotoSakit"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silahkan Kirim Bukti berupa Foto"/>
+
+                <Button
+                    android:id="@+id/btnChooseFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="CHOOSE FILE"
+                    android:textSize="12sp"
+                    android:backgroundTint="#707070"
+                    android:layout_marginStart="136dp"
+                    android:layout_marginTop="42dp"/>
+
+                <ImageView
+                    android:id="@+id/imgEvidenceSakit"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@android:drawable/ic_menu_upload"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Tanggal Cuti"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTanggalCuti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:text="_____________"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnTglCuti"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="230dp"
+                    android:background="@android:drawable/ic_menu_my_calendar"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Selesai Cuti"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvSelesaiCuti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="120dp"
+                    android:text="_____________"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnSelesaiCuti"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="230dp"
+                    android:background="@android:drawable/ic_menu_my_calendar"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:background="#00FFFFFF">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="56dp"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txLamaCuti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Lama Cuti"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"
+                    android:textSize="16sp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="24dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvAlasanCuti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alasan Cuti"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:gravity="top"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvAlamatCuti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat Selama Cuti"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:gravity="top" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnCancelFormCuti"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#F43737"
+        android:text="BATAL"
+        android:textColor="@color/white"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSimpanFormCuti"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnSimpanFormCuti"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3ADD3A"
+        android:text="SIMPAN"
+        android:textColor="@color/white"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelFormCuti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelFormCuti"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelFormCuti"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

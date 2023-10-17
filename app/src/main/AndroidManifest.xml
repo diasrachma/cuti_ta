@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cuti_ta">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".BaseApplication"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cuti_ta"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PrivasiAkunActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Admin -->
+        <activity android:name=".admin.MainAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.AkunAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.TtdAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.UserAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.KuotaAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.AkunInsertAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.TtdInsertAdminActiviity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.UserEditAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.FormAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.RiwayatAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.ArsipAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.CutiDetailAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.CutiEditAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.CutiValidasiAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.IzinRiwayatAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.IzinDetailAdminActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.AkunEditActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Pegawai -->
+        <activity android:name=".pegawai.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.ProfilPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.KuotaCutiPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.FormPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.RiwayatPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.RiwayatDetailPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.ProfilEditPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.CutiEditPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.IzinFormPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.IzinRiwayatPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.IzinArsipPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.IzinDetailPegawaiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pegawai.WhatsAppActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Pimpinan -->
+        <activity android:name=".pimpinan.MainPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.FormPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.RiwayatPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.KuotaCutiPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.ArsipPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.ArsipDetailPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.RiwayatDetailPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.ProfilPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.ProfilEditPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.CutiEditPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.IzinFormPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.IzinRiwayatPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.IzinDetailPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.IzinArsipPimpinanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.CutiValidasiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".pimpinan.ArsipPendingPimpinanActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

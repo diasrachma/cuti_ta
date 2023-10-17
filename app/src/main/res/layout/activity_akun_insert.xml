@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="REGISTRASI AKUN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnSimpanInsertAkun"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul"
+        tools:layout_editor_absoluteX="8dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:boxStrokeColor="@color/purple_500"
+            app:hintTextColor="@color/purple_500"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insNamaAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Pegawai"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:boxStrokeColor="@color/purple_500"
+            app:hintTextColor="@color/purple_500"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insNipAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NIP Pegawai"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/underline"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:boxStrokeColor="@color/purple_500"
+            app:hintTextColor="@color/purple_500"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insUsernameAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:boxStrokeColor="@color/purple_500"
+            app:hintTextColor="@color/purple_500"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insPasswordAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="number|phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="#02000000"
+            app:strokeWidth="1dp"
+            app:strokeColor="#939393">
+
+            <Spinner
+                android:id="@+id/idSpUnitKerja"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="8dp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineHeight="18dp"
+            android:textColor="#F63232"
+            android:text="*gunakan nomor handphone sebagai username dan password\n bawaan untuk user Pegawai!"
+            android:textStyle="italic"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="12dp"
+            android:text="Level User"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rgLevelInsertAkun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="26dp">
+
+            <RadioButton
+                android:id="@+id/lvlPimpinan"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="Pimpinan"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/lvPegawai"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Pegawai"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSimpanInsertAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#D8CB55"
+        android:src="@drawable/next"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

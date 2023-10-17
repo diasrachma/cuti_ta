@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_homeAdmin"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_ttdAdmin"
+        android:icon="@drawable/ttd"
+        android:title="Master TTD"/>
+
+    <item
+        android:title="Pengguna"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_akunAdmin"
+                android:icon="@drawable/key"
+                android:title="Akun" />
+
+            <item
+                android:id="@+id/nav_userAdmin"
+                android:icon="@drawable/akun"
+                android:title="Profil" />
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Cuti">
+        <menu>
+            <item
+                android:id="@+id/nav_formAdmin"
+                android:icon="@drawable/task"
+                android:title="Form Cuti"/>
+
+            <item
+                android:id="@+id/nav_riwayatAdmin"
+                android:icon="@drawable/history"
+                android:title="Riwayat Cuti"/>
+
+            <item
+                android:id="@+id/nav_arsipAdmin"
+                android:icon="@drawable/archive"
+                android:title="Arsip Cuti Pegawai"/>
+
+            <item
+                android:id="@+id/nav_kuotaAdmin"
+                android:icon="@drawable/sisa"
+                android:title="Kuota Cuti"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Izin Keluar">
+        <menu>
+            <item
+                android:id="@+id/nav_riwayatIzinKeluarAdmin"
+                android:icon="@drawable/history"
+                android:title="Riwayat Izin Keluar"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_resetAdmin"
+                android:icon="@drawable/privacy"
+                android:title="Privasi Akun"/>
+
+            <item
+                android:id="@+id/nav_logoutAdmin"
+                android:icon="@drawable/logoutnih"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

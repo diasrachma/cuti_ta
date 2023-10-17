@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="DETAIL PROFIL USER"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStsAkunUserDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NonAktif"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardElevation="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/space3">
+
+            <ImageView
+                android:id="@+id/imgUserDetail"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="8dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ic_image"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvGolonganUserDetail"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="84dp"
+                android:text="Golongan"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvNamaUserDetail"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:text="Nama Lengkap Pegawi"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvNipUserDetail"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="28dp"
+                android:text="NIP 0123456789012345"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvJabatanUserDetail"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="56dp"
+                android:text="Jabatan Pegawai"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvNoHpUserDetail"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="112dp"
+                android:text="No. Hp 081234567890"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvMasaKerjaUserDetail"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginBottom="8dp"
+                android:text="00 Tahun"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/btnCloseUserDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:paddingHorizontal="12dp"
+        android:text="Tutup"
+        android:textColor="#0090FF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/btnEditUserDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        android:paddingHorizontal="24dp"
+        android:text="Edit"
+        android:textColor="#0090FF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCloseUserDetail"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCloseUserDetail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
